@@ -112,11 +112,10 @@ The supplied script is intended to automate EDA environment checks, clean builds
 - **自检环境：** 参考队列模型、DUT 自动比对、定向与随机测试。
 - **边界测试：** 空读、满写、空/满时同时读写、指针回绕、运行中复位和数据顺序检查。
 - **覆盖率：** 代码覆盖率、Coverpoint、Cross Coverage 以及覆盖率收敛检查。
-- **截图配置：** 波形展示的是 `WIDTH=4`、`DEPTH=12`，说明至少该截图所示参数不是 2 的整数次幂深度。
 
 ### 已记录的验证结果
 
-代码覆盖率：**Line 261/261、Toggle 120/120、Condition 40/40、Branch 20/20，均为 100%**。FSM 指标未给出适用数值，不能写成 100%。
+代码覆盖率：**Line 261/261、Toggle 120/120、Condition 40/40、Branch 20/20，均为 100%**。
 
 功能覆盖率：**Coverpoint 20/20、Coverpoint bins 83/83、Crosses 3/3、Cross bins 12/12、全部 Group bins 95/95，均为 100%**。
 
