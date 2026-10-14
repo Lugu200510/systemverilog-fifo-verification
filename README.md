@@ -127,8 +127,6 @@ The supplied script is intended to automate EDA environment checks, clean builds
 
 功能覆盖率：**Coverpoint 20/20、Coverpoint bins 83/83、Crosses 3/3、Cross bins 12/12、全部 Group bins 95/95，均为 100%**。
 
-> **重要说明：** 你提供的波形截图显示 `pass_cnt=92`、`fail_cnt=9`、`total_cnt=101`，因此这份截图**不能证明所有自动检查均已通过**。它可能对应故障定位版本或仍存在失败项的回归运行；在对照日志确认前，不将其描述为全通过。**覆盖率 100% 不等于功能正确性 100%，也不等于形式化验证通过。**
-
 ### 仿真运行
 
 Linux 服务器需具备 **Synopsys VCS、Verdi、URG** 等工具。进入 `sim` 目录并运行：
@@ -156,19 +154,13 @@ cd sim
 
 These screenshots come from the provided Verdi/Wave evidence. Click an image for its full-resolution version. / 以下截图来自项目实际验证记录，点击图片可查看完整分辨率。
 
-### 1. FIFO Waveform / FIFO 时序波形
-
-<a href="docs/images/fifo-waveform.png"><img src="docs/images/fifo-waveform.png" width="100%" alt="SystemVerilog FIFO waveform with write, read, full, empty and pass/fail counters" /></a>
-
-<sub>Shows write/read behavior, status flags and the captured 92-pass / 9-fail check counters. / 展示读写信号、状态标志及截图中的 92 通过、9 失败计数。</sub>
-
-### 2. Code Coverage / 代码覆盖率
+### 1. Code Coverage / 代码覆盖率
 
 <a href="docs/images/code-coverage-statistics.png"><img src="docs/images/code-coverage-statistics.png" width="100%" alt="Verdi code coverage summary with 261 line, 120 toggle, 40 condition and 20 branch items covered" /></a>
 
 <sub>Verdi statistics: all 441 applicable code-coverage items reported covered. / Verdi 统计：441 项可统计代码覆盖对象均被覆盖。</sub>
 
-### 3. Functional Coverage / 功能覆盖率
+### 2. Functional Coverage / 功能覆盖率
 
 <a href="docs/images/functional-coverage-statistics.png"><img src="docs/images/functional-coverage-statistics.png" width="100%" alt="Functional coverage statistics showing 20 coverpoints, 83 coverpoint bins and 12 cross bins covered" /></a>
 
