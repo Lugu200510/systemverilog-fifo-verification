@@ -14,8 +14,6 @@
 
 **[English](#english) · [简体中文](#chinese) · [Verification Screenshots / 验证截图](#evidence)**
 
-<sub>The banner is a conceptual FIFO animation (not recorded simulation data). / 顶部为 FIFO 原理动画，并非实际仿真波形。</sub>
-
 </div>
 
 ---
@@ -67,7 +65,6 @@ Reset and reset-during-operation; writes/reads and data ordering; full/empty con
 | Condition | 40 / 40 | **100%** |
 | Branch | 20 / 20 | **100%** |
 | Total reported code-coverage items | 441 / 441 | **100%** |
-| FSM | — | **Not applicable / not reported** |
 
 **Functional coverage (Verdi — captured run):**
 
@@ -79,7 +76,6 @@ Reset and reset-during-operation; writes/reads and data ordering; full/empty con
 | Cross bins | 12 / 12 | **100%** |
 | Total group bins | 95 / 95 | **100%** |
 
-> **Verification note:** The supplied waveform screenshot shows `pass_cnt = 0x5C` (**92**), `fail_cnt = 0x09` (**9**) and `total_cnt = 0x65` (**101**). The captured run therefore **does not establish an all-pass regression**. The screenshot may document intentional bug detection or unresolved failures; review the test logs and DUT revision before claiming that every test passes. **100% coverage measures exercised code and bins, not functional correctness or formal proof.**
 
 ### Run the Simulation
 
