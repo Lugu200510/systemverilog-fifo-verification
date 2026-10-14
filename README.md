@@ -143,24 +143,6 @@ source sim/load_eda.csh
 
 该脚本与具体服务器环境相关，不同平台上的 module 名称和软件版本可能需要进行相应修改。
 
-## 自动生成文件
-
-VCS、Verdi 和 URG 在编译、仿真及覆盖率分析过程中会产生大量临时文件，例如：
-
-```text
-simv
-simv.daidir/
-simv.vdb/
-csrc/
-urgReport/
-*.vpd
-*.fsdb
-*.log
-AN.DB/
-```
-
-这些文件均通过 `.gitignore` 排除，不会提交到 GitHub 仓库。
-
 ## 说明
 
 本项目包含 FIFO RTL 设计、SystemVerilog 验证环境以及自动化仿真脚本，可在配置有 Synopsys VCS / Verdi 的 EDA 环境中完成完整的编译、仿真、波形分析和覆盖率验证流程。
