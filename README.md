@@ -31,13 +31,10 @@ A **self-checking testbench** uses a SystemVerilog queue as a reference model to
 
 ```mermaid
 flowchart LR
-    IN[Write request / data] --> FIFO[Parameterized synchronous FIFO]
-    FIFO --> OUT[Read data / status flags]
-    TB[Self-checking Testbench] --> DUT[FIFO DUT]
-    TB --> REF[Queue reference model]
-    DUT --> CMP[Check DUT against reference]
-    REF --> CMP
-    CMP --> COV[SVA / Functional & Code Coverage]
+    TB[Testbench] --> FIFO[FIFO DUT]
+    REF[Queue Model] --> CMP[Result Check]
+    FIFO --> CMP
+    CMP --> COV[Coverage]
 ```
 
 **Main components:** `rtl/fifo.sv`, `tb/fifo_tb.sv`, `sim/run.sh` (paths are based on the project layout provided). The supplied waveform displays a test configuration of **WIDTH=4** and **DEPTH=12**.
